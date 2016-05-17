@@ -13,12 +13,13 @@ var Slider  = require('react-native-slider');
 module.exports = React.createClass({
   getInitialState: function() {
 		return {
+      fullname: '',
 			username: '',
 			password: '',
+      confirmpassword: '',
 			errorMessage: '',
 			loadingCurrentUser: true,
       email: '',
-      passwordConfirmation: '',
       swipeToClose: true,
       isOpen: false,
       isDisabled: false,
@@ -115,8 +116,31 @@ module.exports = React.createClass({
           <View style={styles.modalInfo1}>
             <View style={styles.yourInfo}>
               <Text style={styles.bold}>YOUR INFORMATION</Text>
+              <View style={{padding: 5}}></View>
             </View>
             <View style={styles.userInfo}>
+              <View style={[styles.inputRow, this.border('blue')]}>
+                <Image
+                  source={require('../img/icons/name.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <TextInput
+                  style={styles.signInput}
+                  placeholder={'Full Name'}
+                  onChangeText={(text) => this.setState({fullname: text})}
+                  value={this.state.fullname}/>
+              </View>
+              <View style={[styles.inputRow, this.border('blue')]}>
+                <Image
+                  source={require('../img/icons/email.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <TextInput
+                  style={styles.signInput}
+                  placeholder={'Email'}
+                  onChangeText={(text) => this.setState({email: text})}
+                  value={this.state.email}/>
+              </View>
             </View>
           </View>
 
@@ -125,6 +149,42 @@ module.exports = React.createClass({
               <Text style={styles.bold}>LOGIN INFORMATION</Text>
             </View>
             <View style={styles.userInfo}>
+              <View style={[styles.inputRow, this.border('blue')]}>
+                <Image
+                  source={require('../img/icons/user.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <TextInput
+                  style={styles.signInput}
+                  placeholder={'Username'}
+                  onChangeText={(text) => this.setState({username: text})}
+                  value={this.state.username}/>
+              </View>
+              <View style={[styles.inputRow, this.border('blue')]}>
+                <Image
+                  source={require('../img/icons/password.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <TextInput
+                  style={styles.signInput}
+                  placeholder={'Password'}
+                  onChangeText={(text) => this.setState({password: text})}
+                  value={this.state.password}/>
+              </View>
+              <View style={[styles.inputRow, this.border('blue')]}>
+                <Image
+                  source={require('../img/icons/password.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <TextInput
+                  style={styles.signInput}
+                  placeholder={'Confirm Password'}
+                  onChangeText={(text) => this.setState({confirmpassword: text})}
+                  value={this.state.confirmpassword}/>
+              </View>
+            </View>
+
+            <View style={styles.modalSpace}>
             </View>
           </View>
 
@@ -171,6 +231,30 @@ module.exports = React.createClass({
 });
 
 var styles = StyleSheet.create({
+  modalSpace: {
+    flex: 2/7,
+    width: window.width,
+  },
+  icon: {
+    width: window.width/15,
+    height: window.width/15,
+    alignSelf: 'center',
+  },
+  inputRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  signInput: {
+    width: window.width/1.25,
+    height: window.height/20,
+    borderColor: '#F4F4F4',
+    borderWidth: 1.2,
+    borderRadius: window.height/80,
+    margin: window.width/25,
+    paddingLeft: 10,
+    fontSize: 13,
+    fontFamily: 'SourceSansPro-Regular',
+  },
   next: {
     fontFamily: 'SourceSansPro-Regular',
     fontSize: 18,
@@ -186,6 +270,8 @@ var styles = StyleSheet.create({
   userInfo: {
     flex: 0.66,
     backgroundColor: 'white',
+    justifyContent: 'space-around',
+    alignItems: 'center',
   },
   signup: {
     flex: 0.80,
@@ -200,8 +286,9 @@ var styles = StyleSheet.create({
     color: 'black',
   },
   yourInfo: {
-    flex: 0.33,
+    flex: 0.20,
     backgroundColor: '#F4F4F4',
+    justifyContent: 'center',
   },
   stepsec1: {
     width: window.width,
@@ -248,17 +335,17 @@ var styles = StyleSheet.create({
     borderBottomColor: '#F0F0F0',
   },
   modalSteps: {
-    flex: 2/7,
+    flex: 1.6/7,
     backgroundColor: '#F4F4F4',
     width: window.width,
   },
   modalInfo1: {
-    flex: 2.15/7,
+    flex: 1.72/7,
     backgroundColor: 'white',
     width: window.width,
   },
   modalInfo2: {
-    flex: 2.15/7,
+    flex: 2.98/7,
     backgroundColor: 'white',
     width: window.width,
   },
