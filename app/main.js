@@ -5,8 +5,10 @@
 var React = require('react-native');
 var {AppRegistry, Component,StyleSheet,Text,View,Navigator } = React;
 var Launch = require('./screens/launch');
+var Step2 = require('./screens/step2');
 var ROUTES = {
 	launch: Launch,
+	step2: Step2,
 }
 
 module.exports = React.createClass({

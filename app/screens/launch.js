@@ -188,13 +188,20 @@ module.exports = React.createClass({
             </View>
           </View>
 
-          <View style={styles.modalFooter}>
-            <Text style={styles.next}>Next</Text>
-          </View>
+          <TouchableHighlight
+            style={{alignItems: 'center'}}
+            onPress={this.next1}
+            underlayColor={'transparent'}
+            style={styles.modalFooter} >
+              <Text style={styles.next}>Next</Text>
+          </TouchableHighlight>
 
        </Modal>
       </View>
     );
+  },
+  next1: function() {
+    this.props.navigator.push({name: 'step2'});
   },
   facebookSignUp: function() {
 
