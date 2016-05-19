@@ -66,6 +66,7 @@
 		<string>SourceSansPro-Semibold.ttf</string>
 		<string>SourceSansPro-SemiboldItalic.ttf</string>
 		<string>SourceSansPro-Bold.otf</string>
+		<string>ionicons.ttf</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>

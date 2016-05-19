@@ -46,6 +46,8 @@
 		880539CE1CEA9DCE00D92AA3 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 880539B71CEA9DCE00D92AA3 /* SourceSansPro-Semibold.otf */; };
 		880539CF1CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 880539B81CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf */; };
 		880539D01CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 880539B81CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf */; };
+		880539DC1CEE654600D92AA3 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880539DB1CEE654600D92AA3 /* ionicons.ttf */; };
+		880539DD1CEE654600D92AA3 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880539DB1CEE654600D92AA3 /* ionicons.ttf */; };
 		8865D5661CE943D7003BB289 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8865D55C1CE943D7003BB289 /* OpenSans-Bold.ttf */; };
 		8865D5671CE943D7003BB289 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8865D55C1CE943D7003BB289 /* OpenSans-Bold.ttf */; };
 		8865D5681CE943D7003BB289 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8865D55D1CE943D7003BB289 /* OpenSans-BoldItalic.ttf */; };
@@ -182,6 +184,7 @@
 		880539B61CEA9DCE00D92AA3 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Regular.otf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/source-sans-pro/SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
 		880539B71CEA9DCE00D92AA3 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Semibold.otf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/source-sans-pro/SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
 		880539B81CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-SemiboldIt.otf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/source-sans-pro/SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		880539DB1CEE654600D92AA3 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = "../../../../../Users/robertgreenfield/Google Drive/Blaclist/Development/App Files/Fonts/ionicons.ttf"; sourceTree = "<group>"; };
 		8865D55C1CE943D7003BB289 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/fonts-open-sans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		8865D55D1CE943D7003BB289 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/fonts-open-sans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		8865D55E1CE943D7003BB289 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/fonts-open-sans/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -382,6 +385,7 @@
 				8865D5601CE943D7003BB289 /* OpenSans-Italic.ttf */,
 				880539AD1CEA9DCE00D92AA3 /* SourceSansPro-Black.otf */,
 				880539AE1CEA9DCE00D92AA3 /* SourceSansPro-BlackIt.otf */,
+				880539DB1CEE654600D92AA3 /* ionicons.ttf */,
 				880539AF1CEA9DCE00D92AA3 /* SourceSansPro-Bold.otf */,
 				880539B01CEA9DCE00D92AA3 /* SourceSansPro-BoldIt.otf */,
 				880539B11CEA9DCE00D92AA3 /* SourceSansPro-ExtraLight.otf */,
@@ -608,6 +612,7 @@
 				880539CC1CEA9DCE00D92AA3 /* SourceSansPro-Regular.otf in Resources */,
 				880539BC1CEA9DCE00D92AA3 /* SourceSansPro-BlackIt.otf in Resources */,
 				880539BE1CEA9DCE00D92AA3 /* SourceSansPro-Bold.otf in Resources */,
+				880539DD1CEE654600D92AA3 /* ionicons.ttf in Resources */,
 				8865D56B1CE943D7003BB289 /* OpenSans-ExtraBold.ttf in Resources */,
 				880539C01CEA9DCE00D92AA3 /* SourceSansPro-BoldIt.otf in Resources */,
 				8865D5791CE943D7003BB289 /* OpenSans-SemiboldItalic.ttf in Resources */,
@@ -634,6 +639,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8865D56C1CE943D7003BB289 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				8865D5781CE943D7003BB289 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				880539DC1CEE654600D92AA3 /* ionicons.ttf in Resources */,
 				880539C91CEA9DCE00D92AA3 /* SourceSansPro-LightIt.otf in Resources */,
 				8865D5701CE943D7003BB289 /* OpenSans-Light.ttf in Resources */,
 				880539BD1CEA9DCE00D92AA3 /* SourceSansPro-Bold.otf in Resources */,

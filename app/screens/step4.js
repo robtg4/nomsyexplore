@@ -165,6 +165,7 @@ module.exports = React.createClass({
     this.setState(newState);
   },
   next1: function() {
+    this.props.navigator.immediatelyResetRouteStack([{ name: 'main'}])
   },
   restart: function() {
     this.props.navigator.immediatelyResetRouteStack([{ name: 'launch'}])

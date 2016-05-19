@@ -8,11 +8,13 @@ var Launch = require('./screens/launch');
 var Step2 = require('./screens/step2');
 var Step3 = require('./screens/step3');
 var Step4 = require('./screens/step4');
+var Main = require('./screens/main-view');
 var ROUTES = {
 	launch: Launch,
 	step2: Step2,
 	step3: Step3,
 	step4: Step4,
+	main: Main, 
 }
 
 module.exports = React.createClass({
