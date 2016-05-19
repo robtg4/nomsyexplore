@@ -1,4 +1,4 @@
-//step 3 of app when user presses next
+//step 4 of app when user presses next
 var React = require('react-native');
 var { View, Text, StyleSheet, Image, TextInput, TouchableHighlight, ScrollView} = React;
 //window size
@@ -10,14 +10,12 @@ var DietData = require('../stores/diets');
 module.exports = React.createClass({
   getInitialState: function() {
 		return {
-      paleo: false,
-      glutenfree: false,
-      eggfree: false,
-      nutfree: false,
-      vegan: false,
-      vegetarian: false,
-      healthy: false,
-      dairyfree: false
+      sweet: false,
+      spicy: false,
+      salty: false,
+      sour: false,
+      fruity: false,
+      bitter: false,
 		};
 	},
   render: function() {
@@ -51,111 +49,88 @@ module.exports = React.createClass({
               style={[styles.steps, this.border('red')]}/>
           </View>
           <View style={[styles.stepsec2, this.border('blue')]}>
-            <Text style={styles.stepsec2text}>Choose the lifestyle that best fits you so that our community knows what you like best!</Text>
+            <Text style={styles.stepsec2text}><Text style={{fontFamily: 'SourceSansPro-Bold'}}>UserName</Text>, help us recommend something delicious by telling us more about your diet.</Text>
           </View>
         </View>
 
         <View style={styles.modalInfo1}>
           <View style={styles.yourInfo}>
-            <Text style={styles.bold}>DIETARY RESTRICTIONS</Text>
+            <Text style={styles.bold}>TASTE</Text>
           </View>
           <View style={styles.dietrow}>
             <TouchableHighlight
               style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('glutenfree') }}
+              onPress={() => { this.updateChoice('sweet') }}
               underlayColor={'transparent'}>
               <View style={styles.dietCol}>
                 <Image
-                  source={this.state.glutenfree ? require('../img/icons/glutenfree_selected.png') : require('../img/icons/glutenfree.png')}
+                  source={this.state.sweet ? require('../img/taste/spoon_of_sugar_selected.png') : require('../img/taste/spoon_of_sugar.png')}
                   resizeMode={'contain'}
                   style={[styles.icon, this.border('red')]}/>
-                <Text style={[styles.dietTitle, this.state.glutenfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Gluten Free</Text>
+                <Text style={[styles.dietTitle, this.state.sweet ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Gluten Free</Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('eggfree') }}
+              onPress={() => { this.updateChoice('spicy') }}
               underlayColor={'transparent'}>
               <View style={styles.dietCol}>
                 <Image
-                  source={this.state.eggfree ? require('../img/icons/eggfree_selected.png') : require('../img/icons/eggfree.png')}
+                  source={this.state.spicy ? require('../img/taste/chili_pepper_selected.png') : require('../img/taste/chili_pepper.png')}
                   resizeMode={'contain'}
                   style={[styles.icon, this.border('red')]}/>
-                <Text style={[styles.dietTitle, this.state.eggfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Egg Free</Text>
+                <Text style={[styles.dietTitle, this.state.spicy ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Egg Free</Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('dairyfree') }}
+              onPress={() => { this.updateChoice('salty') }}
               underlayColor={'transparent'}>
               <View style={styles.dietCol}>
                 <Image
-                  source={this.state.dairyfree ? require('../img/icons/dairyfree_selected.png') : require('../img/icons/dairyfree.png')}
+                  source={this.state.salty ? require('../img/taste/salt_shaker_selected.png') : require('../img/taste/salt_shaker.png')}
                   resizeMode={'contain'}
                   style={[styles.icon, this.border('red')]}/>
-                <Text style={[styles.dietTitle, this.state.dairyfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Dairy Free</Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight
-              style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('vegetarian') }}
-              underlayColor={'transparent'}>
-              <View style={styles.dietCol}>
-                <Image
-                  source={this.state.vegetarian ? require('../img/icons/vegetarian_selected.png') : require('../img/icons/vegetarian.png')}
-                  resizeMode={'contain'}
-                  style={[styles.icon, this.border('red')]}/>
-                <Text style={[styles.dietTitle, this.state.vegetarian ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Vegetarian</Text>
+                <Text style={[styles.dietTitle, this.state.salty ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Dairy Free</Text>
               </View>
             </TouchableHighlight>
           </View>
+
           <View style={styles.dietrow}>
             <TouchableHighlight
               style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('nutfree') }}
+              onPress={() => { this.updateChoice('sour') }}
               underlayColor={'transparent'}>
               <View style={styles.dietCol}>
                 <Image
-                  source={this.state.nutfree ? require('../img/icons/nutfree_selected.png') : require('../img/icons/nutfree.png')}
+                  source={this.state.sour ? require('../img/taste/citrus_selected.png') : require('../img/taste/citrus.png')}
                   resizeMode={'contain'}
                   style={[styles.icon, this.border('red')]}/>
-                  <Text style={[styles.dietTitle, this.state.nutfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Nut Free</Text>
+                <Text style={[styles.dietTitle, this.state.sour ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Vegetarian</Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('healthy') }}
+              onPress={() => { this.updateChoice('bitter') }}
               underlayColor={'transparent'}>
               <View style={styles.dietCol}>
                 <Image
-                  source={this.state.healthy ? require('../img/icons/healthy_selected.png') : require('../img/icons/healthy.png')}
+                  source={this.state.bitter ? require('../img/taste/java_coffee_bean_selected.png') : require('../img/taste/java_coffee_bean.png')}
                   resizeMode={'contain'}
                   style={[styles.icon, this.border('red')]}/>
-                <Text style={[styles.dietTitle, this.state.healthy ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Healthy</Text>
+                  <Text style={[styles.dietTitle, this.state.bitter ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Nut Free</Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('vegan') }}
+              onPress={() => { this.updateChoice('fruity') }}
               underlayColor={'transparent'}>
               <View style={styles.dietCol}>
                 <Image
-                  source={this.state.vegan ? require('../img/icons/vegan_selected.png') : require('../img/icons/vegan.png')}
+                  source={this.state.fruity ? require('../img/taste/raspberry_selected.png') : require('../img/taste/raspberry.png')}
                   resizeMode={'contain'}
                   style={[styles.icon, this.border('red')]}/>
-                <Text style={[styles.dietTitle, this.state.vegan ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Vegan</Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight
-              style={{alignItems: 'center'}}
-              onPress={() => { this.updateChoice('paleo') }}
-              underlayColor={'transparent'}>
-              <View style={styles.dietCol}>
-                <Image
-                  source={this.state.paleo ? require('../img/icons/paleo_selected.png') : require('../img/icons/paleo.png')}
-                  resizeMode={'contain'}
-                  style={[styles.icon, this.border('red')]}/>
-                <Text style={[styles.dietTitle, this.state.paleo ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Paleo</Text>
+                <Text style={[styles.dietTitle, this.state.fruity ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Healthy</Text>
               </View>
             </TouchableHighlight>
           </View>
@@ -177,7 +152,7 @@ module.exports = React.createClass({
             onPress={this.next1}
             underlayColor={'transparent'}
             style={styles.modalFooterNext} >
-              <Text style={styles.next}>Next</Text>
+              <Text style={styles.next}>Let{"'"}s Eat</Text>
           </TouchableHighlight>
         </View>
 
@@ -190,7 +165,6 @@ module.exports = React.createClass({
     this.setState(newState);
   },
   next1: function() {
-    this.props.navigator.push({name: 'step4'});
   },
   restart: function() {
     this.props.navigator.immediatelyResetRouteStack([{ name: 'launch'}])
@@ -261,10 +235,10 @@ var styles = StyleSheet.create({
   },
   stepsec2: {
     flex: 0.60,
-    width: window.width/1.05,
+    width: window.width/1.01,
     justifyContent: 'space-around',
     alignItems: 'center',
-    marginLeft: window.width/33,
+    marginLeft: window.width/70,
   },
   stepsec2text: {
     fontFamily: 'SourceSansPro-Regular',
