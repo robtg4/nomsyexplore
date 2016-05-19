@@ -64,37 +64,49 @@ module.exports = React.createClass({
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('glutenfree') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.glutenfree ? require('../img/icons/glutenfree_selected.png') : require('../img/icons/glutenfree.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.glutenfree ? require('../img/icons/glutenfree_selected.png') : require('../img/icons/glutenfree.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <Text style={[styles.dietTitle, this.state.glutenfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Gluten Free</Text>
+              </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('eggfree') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.eggfree ? require('../img/icons/eggfree_selected.png') : require('../img/icons/eggfree.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.eggfree ? require('../img/icons/eggfree_selected.png') : require('../img/icons/eggfree.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <Text style={[styles.dietTitle, this.state.eggfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Egg Free</Text>
+              </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('dairyfree') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.dairyfree ? require('../img/icons/dairyfree_selected.png') : require('../img/icons/dairyfree.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.dairyfree ? require('../img/icons/dairyfree_selected.png') : require('../img/icons/dairyfree.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <Text style={[styles.dietTitle, this.state.dairyfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Dairy Free</Text>
+              </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('vegetarian') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.vegetarian ? require('../img/icons/vegetarian_selected.png') : require('../img/icons/vegetarian.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.vegetarian ? require('../img/icons/vegetarian_selected.png') : require('../img/icons/vegetarian.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <Text style={[styles.dietTitle, this.state.vegetarian ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Vegetarian</Text>
+              </View>
             </TouchableHighlight>
           </View>
           <View style={styles.dietrow}>
@@ -102,37 +114,49 @@ module.exports = React.createClass({
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('nutfree') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.nutfree ? require('../img/icons/nutfree_selected.png') : require('../img/icons/nutfree.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.nutfree ? require('../img/icons/nutfree_selected.png') : require('../img/icons/nutfree.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                  <Text style={[styles.dietTitle, this.state.nutfree ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Nut Free</Text>
+              </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('healthy') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.healthy ? require('../img/icons/healthy_selected.png') : require('../img/icons/healthy.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.healthy ? require('../img/icons/healthy_selected.png') : require('../img/icons/healthy.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <Text style={[styles.dietTitle, this.state.healthy ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Healthy</Text>
+              </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('vegan') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.vegan ? require('../img/icons/vegan_selected.png') : require('../img/icons/vegan.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.vegan ? require('../img/icons/vegan_selected.png') : require('../img/icons/vegan.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <Text style={[styles.dietTitle, this.state.vegan ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Vegan</Text>
+              </View>
             </TouchableHighlight>
             <TouchableHighlight
               style={{alignItems: 'center'}}
               onPress={() => { this.updateChoice('paleo') }}
               underlayColor={'transparent'}>
-              <Image
-                source={this.state.paleo ? require('../img/icons/paleo_selected.png') : require('../img/icons/paleo.png')}
-                resizeMode={'contain'}
-                style={[styles.icon, this.border('red')]}/>
+              <View style={styles.dietCol}>
+                <Image
+                  source={this.state.paleo ? require('../img/icons/paleo_selected.png') : require('../img/icons/paleo.png')}
+                  resizeMode={'contain'}
+                  style={[styles.icon, this.border('red')]}/>
+                <Text style={[styles.dietTitle, this.state.paleo ? {color: '#4CB552'} : {color: '#EFEFEF'}]}>Paleo</Text>
+              </View>
             </TouchableHighlight>
           </View>
           <View style={styles.modalSpace}>
@@ -185,6 +209,14 @@ module.exports = React.createClass({
 });
 
 var styles = StyleSheet.create({
+  dietCol: {
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+  },
+  dietTitle: {
+    fontFamily: 'SourceSansPro-Semibold',
+    fontSize: 14,
+  },
   icon: {
     width: window.width/7,
     height: window.width/7,
