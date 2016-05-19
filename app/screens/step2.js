@@ -78,6 +78,9 @@ module.exports = React.createClass({
       </View>
     );
   },
+  next1: function() {
+    this.props.navigator.push({name: 'step3'});
+  }, 
   choosePhoto: function() {
 
   },
