@@ -7,7 +7,7 @@ var { StyleSheet, Text, View, TouchableOpacity, Animated } = React;
 var Dimensions = require('Dimensions');
 var window = Dimensions.get('window');
 
-var Icon = require('react-native-vector-icons/Ionicons');
+var Icon = require('react-native-vector-icons/FontAwesome');
 
 var styles = StyleSheet.create({
   tab: {
@@ -28,8 +28,8 @@ var styles = StyleSheet.create({
     backgroundColor:'white',
   },
   icon: {
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     position: 'absolute',
     top: 0,
     left: 20,
@@ -51,9 +51,9 @@ module.exports = React.createClass({
 
     return (
       <TouchableOpacity key={name} onPress={() => this.props.goToPage(page)} style={[styles.tab]}>
-        <Icon name={name} size={40} color='#4CB552' style={styles.icon}
+        <Icon name={name} size={30} color='#4CB552' style={styles.icon}
               ref={(icon) => { this.selectedTabIcons[page] = icon }}/>
-        <Icon name={name} size={40} color='#EFEFEF' style={styles.icon}
+        <Icon name={name} size={30} color='#EFEFEF' style={styles.icon}
               ref={(icon) => { this.unselectedTabIcons[page] = icon }}/>
       </TouchableOpacity>
     );

@@ -42,28 +42,28 @@ module.exports = React.createClass({
         	renderTabBar={() => <MenuTabBar />}>
           <ScrollView
             key={1}
-            tabLabel="heart">
+            tabLabel="map-o">
             <Explore navigator={this.props.navigator} />
           </ScrollView>
           <ScrollView
             key={2}
-            tabLabel="pound" >
+            tabLabel="map-marker" >
             <Recipes navigator={this.props.navigator} />
           </ScrollView>
           <ScrollView
             key={3}
             alwaysBounceVertical={false}
-            tabLabel="ios-paper" >
+            tabLabel="plus-circle" >
             <Post navigator={this.props.navigator} />
           </ScrollView>
           <ScrollView
             key={4}
-            tabLabel="play">
+            tabLabel="user">
              <Profile navigator={this.props.navigator} />
           </ScrollView>
           <ScrollView
             key={5}
-            tabLabel="ios-at">
+            tabLabel="bell-o">
             <Notifications navigator={this.props.navigator} />
           </ScrollView>
         </ScrollableTabView>

@@ -48,6 +48,10 @@
 		880539D01CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 880539B81CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf */; };
 		880539DC1CEE654600D92AA3 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880539DB1CEE654600D92AA3 /* ionicons.ttf */; };
 		880539DD1CEE654600D92AA3 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880539DB1CEE654600D92AA3 /* ionicons.ttf */; };
+		880539DF1CEF7FF800D92AA3 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880539DE1CEF7FF800D92AA3 /* Ionicons.ttf */; };
+		880539E01CEF7FF800D92AA3 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880539DE1CEF7FF800D92AA3 /* Ionicons.ttf */; };
+		880539E21CEF836900D92AA3 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 880539E11CEF836900D92AA3 /* FontAwesome.otf */; };
+		880539E31CEF836900D92AA3 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 880539E11CEF836900D92AA3 /* FontAwesome.otf */; };
 		8865D5661CE943D7003BB289 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8865D55C1CE943D7003BB289 /* OpenSans-Bold.ttf */; };
 		8865D5671CE943D7003BB289 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8865D55C1CE943D7003BB289 /* OpenSans-Bold.ttf */; };
 		8865D5681CE943D7003BB289 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8865D55D1CE943D7003BB289 /* OpenSans-BoldItalic.ttf */; };
@@ -185,6 +189,8 @@
 		880539B71CEA9DCE00D92AA3 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Semibold.otf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/source-sans-pro/SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
 		880539B81CEA9DCE00D92AA3 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-SemiboldIt.otf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/source-sans-pro/SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
 		880539DB1CEE654600D92AA3 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = "../../../../../Users/robertgreenfield/Google Drive/Blaclist/Development/App Files/Fonts/ionicons.ttf"; sourceTree = "<group>"; };
+		880539DE1CEF7FF800D92AA3 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../blaclist/node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		880539E11CEF836900D92AA3 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/Font-Awesome/src/assets/font-awesome/fonts/FontAwesome.otf"; sourceTree = "<group>"; };
 		8865D55C1CE943D7003BB289 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/fonts-open-sans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		8865D55D1CE943D7003BB289 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/fonts-open-sans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		8865D55E1CE943D7003BB289 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "../../../../../Volumes/Data/Users/robertgreenfield/Downloads/fonts-open-sans/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -391,6 +397,8 @@
 				880539B11CEA9DCE00D92AA3 /* SourceSansPro-ExtraLight.otf */,
 				880539B21CEA9DCE00D92AA3 /* SourceSansPro-ExtraLightIt.otf */,
 				880539B31CEA9DCE00D92AA3 /* SourceSansPro-It.otf */,
+				880539DE1CEF7FF800D92AA3 /* Ionicons.ttf */,
+				880539E11CEF836900D92AA3 /* FontAwesome.otf */,
 				880539B41CEA9DCE00D92AA3 /* SourceSansPro-Light.otf */,
 				880539B51CEA9DCE00D92AA3 /* SourceSansPro-LightIt.otf */,
 				880539B61CEA9DCE00D92AA3 /* SourceSansPro-Regular.otf */,
@@ -600,6 +608,7 @@
 			files = (
 				880539C81CEA9DCE00D92AA3 /* SourceSansPro-Light.otf in Resources */,
 				880539BA1CEA9DCE00D92AA3 /* SourceSansPro-Black.otf in Resources */,
+				880539E01CEF7FF800D92AA3 /* Ionicons.ttf in Resources */,
 				8865D5711CE943D7003BB289 /* OpenSans-Light.ttf in Resources */,
 				880539C41CEA9DCE00D92AA3 /* SourceSansPro-ExtraLightIt.otf in Resources */,
 				8865D5691CE943D7003BB289 /* OpenSans-BoldItalic.ttf in Resources */,
@@ -608,6 +617,7 @@
 				880539CE1CEA9DCE00D92AA3 /* SourceSansPro-Semibold.otf in Resources */,
 				880539CA1CEA9DCE00D92AA3 /* SourceSansPro-LightIt.otf in Resources */,
 				880539C21CEA9DCE00D92AA3 /* SourceSansPro-ExtraLight.otf in Resources */,
+				880539E31CEF836900D92AA3 /* FontAwesome.otf in Resources */,
 				8865D5671CE943D7003BB289 /* OpenSans-Bold.ttf in Resources */,
 				880539CC1CEA9DCE00D92AA3 /* SourceSansPro-Regular.otf in Resources */,
 				880539BC1CEA9DCE00D92AA3 /* SourceSansPro-BlackIt.otf in Resources */,
@@ -628,6 +638,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880539DF1CEF7FF800D92AA3 /* Ionicons.ttf in Resources */,
 				8865D5741CE943D7003BB289 /* OpenSans-Regular.ttf in Resources */,
 				880539C11CEA9DCE00D92AA3 /* SourceSansPro-ExtraLight.otf in Resources */,
 				880539BF1CEA9DCE00D92AA3 /* SourceSansPro-BoldIt.otf in Resources */,
@@ -641,6 +652,7 @@
 				8865D5781CE943D7003BB289 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				880539DC1CEE654600D92AA3 /* ionicons.ttf in Resources */,
 				880539C91CEA9DCE00D92AA3 /* SourceSansPro-LightIt.otf in Resources */,
+				880539E21CEF836900D92AA3 /* FontAwesome.otf in Resources */,
 				8865D5701CE943D7003BB289 /* OpenSans-Light.ttf in Resources */,
 				880539BD1CEA9DCE00D92AA3 /* SourceSansPro-Bold.otf in Resources */,
 				880539B91CEA9DCE00D92AA3 /* SourceSansPro-Black.otf in Resources */,
