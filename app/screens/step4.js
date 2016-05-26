@@ -165,10 +165,10 @@ module.exports = React.createClass({
     this.setState(newState);
   },
   next1: function() {
-    this.props.navigator.immediatelyResetRouteStack([{ name: 'main'}])
+    this.props.navigator.immediatelyResetRouteStack([{ name: 'main'}]);
   },
   restart: function() {
-    this.props.navigator.immediatelyResetRouteStack([{ name: 'launch'}])
+    this.props.navigator.immediatelyResetRouteStack([{ name: 'launch'}]);
   },
   back: function() {
     this.props.navigator.pop();

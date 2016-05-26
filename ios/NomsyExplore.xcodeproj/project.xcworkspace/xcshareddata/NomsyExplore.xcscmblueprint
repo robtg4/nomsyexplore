@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "57443E54467A62E5A6F2E20516CF401749AF9BCF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A5967575A82190AAAA29664569CD239121414FCA" : 0,
+    "57443E54467A62E5A6F2E20516CF401749AF9BCF" : 0,
+    "2982D6D208EAA85FCC25FC81B15BC0C7E9AE44A6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0FC138D9-E393-4B89-9950-85F90A5ED277",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A5967575A82190AAAA29664569CD239121414FCA" : "..\/..\/..\/Volumes\/Data\/Users\/robertgreenfield\/Downloads\/Font-Awesome",
+    "57443E54467A62E5A6F2E20516CF401749AF9BCF" : "NomsyExplore\/",
+    "2982D6D208EAA85FCC25FC81B15BC0C7E9AE44A6" : "blaclist\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NomsyExplore",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/NomsyExplore.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/robtg4\/blaclist.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2982D6D208EAA85FCC25FC81B15BC0C7E9AE44A6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:robtg4\/nomsyexplore",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57443E54467A62E5A6F2E20516CF401749AF9BCF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FortAwesome\/Font-Awesome.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5967575A82190AAAA29664569CD239121414FCA"
+    }
+  ]
+}
