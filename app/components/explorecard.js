@@ -30,9 +30,7 @@ module.exports = React.createClass({
                   </View>
                   <View style={[styles.footer, this.border('white')]}>
                     <View style={styles.sourceRow}>
-                      <View style={[this.border('white')]}>
-                          <Text style={[styles.rowText, {fontWeight: 'bold'}]}>{this.props.entryBrand}</Text>
-                      </View>
+                      {this.renderDiets(this.props.diets)}
                     </View>
                   </View>
               </View>
@@ -40,18 +38,101 @@ module.exports = React.createClass({
         </TouchableHighlight>
     )
   },
-  onStarRatingPress: {
+  renderDiets: function(dietArray) {
+    var that = this;
 
+		return dietArray.map(function(diet, i) {
+
+      var img_name = diet.replace(/\s+/g, '').toLowerCase();
+
+      switch (img_name) {
+            case "nutfree":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/nutfree_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+            case "vegan":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/vegan_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+            case "paleo":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/paleo_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+            case "glutenfree":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/glutenfree_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+            case "vegetarian":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/vegetarian_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+            case "dairyfree":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/dairyfree_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+            case "eggfree":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/eggfree_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+            case "healthy":
+                return <View key={i} style={styles.iconRow}>
+                <Image style={styles.icon}
+                  resizeMode={'contain'}
+                  source={require('../img/icons/healthy_selected.png')} />
+                <Text style={styles.iconText}>{diet}</Text>
+              </View>;
+        }
+		});
   },
   border: function(color) {
 	    return {
-	      borderColor: color,
-	      borderWidth: 2,
+	      //borderColor: color,
+	      //borderWidth: 2,
 	    }
 	 },
 });
 
 var styles = StyleSheet.create({
+  icon: {
+    width: window.width/20,
+    height: window.width/20,
+    backgroundColor: 'transparent'
+  },
+  iconRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginRight: 5,
+    backgroundColor: 'transparent'
+  },
+  iconText: {
+    color: '#54C068',
+    fontSize: 13,
+    fontFamily: 'SourceSansPro-Semibold',
+    backgroundColor: 'transparent',
+    margin: 4,
+    backgroundColor: 'transparent'
+  },
   ratingtext: {
     color: 'grey',
     fontSize: 15,
